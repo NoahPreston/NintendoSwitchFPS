@@ -1,0 +1,502 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1761114946107382}
+  m_IsPrefabParent: 1
+--- !u!1 &1761114946107382
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4275462507211878}
+  - component: {fileID: 114747534051637980}
+  - component: {fileID: 82536744991058582}
+  - component: {fileID: 212452340828448172}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4275462507211878
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1761114946107382}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.0109179, y: -1.3198014, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &82536744991058582
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1761114946107382}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!114 &114747534051637980
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1761114946107382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91d30709c56a7d343be3828c196c7c8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vWeaponList:
+  - vName: Pistol
+    vWeaponName: 0
+    vWeaponType: 1
+    Is2Handed: 0
+    vWeaponIcon: {fileID: 21300000, guid: 379676913003f4b4fb67ca9e26fbeb97, type: 3}
+    vWeaponObj: {fileID: 1031040304690994, guid: 06723e9a6ee9b7044b2613638ac2d4f8,
+      type: 2}
+    vAimObj: {fileID: 1266085690551780, guid: 06723e9a6ee9b7044b2613638ac2d4f8, type: 2}
+    vProjectile: {fileID: 1483760561716642, guid: 72280a6a71ea79a409a4e6f95b727fc8,
+      type: 2}
+    vBulletAngleList:
+    - 0
+    vProjectileSpeed: 26
+    vTimeBtwShot: 0.4
+    vTimeWaited: 0
+    vImpactFX: {fileID: 1882777859570806, guid: 26b9baa734847f140803e4e033a9212a,
+      type: 2}
+    vShotFX: {fileID: 1000013086863710, guid: bfa2421e2a82beb4a9c7d7cdc2577f76, type: 2}
+    vDmg: 1
+    Rebounce: 0
+    vAmmoSize: 6
+    vAmmoCur: 0
+    vClipObj: {fileID: 1766454748759930, guid: e74b0e6acc86e7542b2a19038b4464a6, type: 2}
+    AttackAnimationUsed: 
+  - vName: ZombieHand
+    vWeaponName: 1
+    vWeaponType: 0
+    Is2Handed: 0
+    vWeaponIcon: {fileID: 0}
+    vWeaponObj: {fileID: 1491162198271826, guid: 025d20a8ff33d8f4ab25f67207848a11,
+      type: 2}
+    vAimObj: {fileID: 0}
+    vProjectile: {fileID: 0}
+    vBulletAngleList:
+    - 0
+    vProjectileSpeed: 0
+    vTimeBtwShot: 3
+    vTimeWaited: 0
+    vImpactFX: {fileID: 0}
+    vShotFX: {fileID: 0}
+    vDmg: 1
+    Rebounce: 0
+    vAmmoSize: 99
+    vAmmoCur: 0
+    vClipObj: {fileID: 0}
+    AttackAnimationUsed: Attack1
+  - vName: Energy Rifle
+    vWeaponName: 2
+    vWeaponType: 1
+    Is2Handed: 0
+    vWeaponIcon: {fileID: 21300010, guid: 379676913003f4b4fb67ca9e26fbeb97, type: 3}
+    vWeaponObj: {fileID: 1695203242741376, guid: 782d953359597d049ad712421284b914,
+      type: 2}
+    vAimObj: {fileID: 0}
+    vProjectile: {fileID: 1131254636878542, guid: 25d6c874781aa2540930bcd364c5f40a,
+      type: 2}
+    vBulletAngleList:
+    - 0
+    vProjectileSpeed: 40
+    vTimeBtwShot: 0.3
+    vTimeWaited: 0
+    vImpactFX: {fileID: 1882777859570806, guid: 26b9baa734847f140803e4e033a9212a,
+      type: 2}
+    vShotFX: {fileID: 1510687501853452, guid: d3fca6e6821cb0b4b9e50f025ef4f984, type: 2}
+    vDmg: 1
+    Rebounce: 4
+    vAmmoSize: 10
+    vAmmoCur: 0
+    vClipObj: {fileID: 1766454748759930, guid: e74b0e6acc86e7542b2a19038b4464a6, type: 2}
+    AttackAnimationUsed: 
+  - vName: Ak47
+    vWeaponName: 3
+    vWeaponType: 1
+    Is2Handed: 1
+    vWeaponIcon: {fileID: 21300012, guid: 379676913003f4b4fb67ca9e26fbeb97, type: 3}
+    vWeaponObj: {fileID: 1411510944606112, guid: 3597263db4c72c14983886924169448b,
+      type: 2}
+    vAimObj: {fileID: 0}
+    vProjectile: {fileID: 1004785105208208, guid: b99132b435c1d534b9f1523665cf57f4,
+      type: 2}
+    vBulletAngleList:
+    - 0
+    vProjectileSpeed: 30
+    vTimeBtwShot: 0.1
+    vTimeWaited: 0
+    vImpactFX: {fileID: 1882777859570806, guid: 26b9baa734847f140803e4e033a9212a,
+      type: 2}
+    vShotFX: {fileID: 1346351358799626, guid: 3c7323c1fe4414743a9cb595b3343a11, type: 2}
+    vDmg: 1
+    Rebounce: 0
+    vAmmoSize: 15
+    vAmmoCur: 0
+    vClipObj: {fileID: 1494395957033088, guid: f7f50ed0c287ef74fb5211d344124b9c, type: 2}
+    AttackAnimationUsed: 
+  - vName: Shotgun
+    vWeaponName: 4
+    vWeaponType: 1
+    Is2Handed: 1
+    vWeaponIcon: {fileID: 21300014, guid: 379676913003f4b4fb67ca9e26fbeb97, type: 3}
+    vWeaponObj: {fileID: 1096333181547058, guid: fa0af532005b479409bdd557ceaa37b1,
+      type: 2}
+    vAimObj: {fileID: 0}
+    vProjectile: {fileID: 1542373711963196, guid: 3eba770226f6aeb40a5797b32c50b3d7,
+      type: 2}
+    vBulletAngleList:
+    - -0.1
+    - 0
+    - 0.1
+    vProjectileSpeed: 40
+    vTimeBtwShot: 0.8
+    vTimeWaited: 0
+    vImpactFX: {fileID: 1882777859570806, guid: 26b9baa734847f140803e4e033a9212a,
+      type: 2}
+    vShotFX: {fileID: 1619333504699498, guid: e9f2ebb9c47d62d499cfe4c962d00ac9, type: 2}
+    vDmg: 3
+    Rebounce: 0
+    vAmmoSize: 2
+    vAmmoCur: 0
+    vClipObj: {fileID: 1823967030371190, guid: ecc1b17e8ce32a647a856bec419c9b18, type: 2}
+    AttackAnimationUsed: 
+  vItemsList:
+  - vName: Pistol
+    vItemName: 1
+    ItemIcon: {fileID: 21300000, guid: 379676913003f4b4fb67ca9e26fbeb97, type: 3}
+    GiveWeapon: 1
+    Usable: 1
+    vDmgType: 0
+    vAmmoType: 1
+    vWeaponName: 0
+  - vName: Energy Rifle
+    vItemName: 2
+    ItemIcon: {fileID: 21300010, guid: 379676913003f4b4fb67ca9e26fbeb97, type: 3}
+    GiveWeapon: 1
+    Usable: 1
+    vDmgType: 1
+    vAmmoType: 1
+    vWeaponName: 2
+  - vName: Ak47
+    vItemName: 3
+    ItemIcon: {fileID: 21300012, guid: 379676913003f4b4fb67ca9e26fbeb97, type: 3}
+    GiveWeapon: 1
+    Usable: 1
+    vDmgType: 2
+    vAmmoType: 1
+    vWeaponName: 3
+  - vName: Shotgun
+    vItemName: 4
+    ItemIcon: {fileID: 21300014, guid: 379676913003f4b4fb67ca9e26fbeb97, type: 3}
+    GiveWeapon: 1
+    Usable: 1
+    vDmgType: 3
+    vAmmoType: 0
+    vWeaponName: 4
+  vSoundList:
+  - vName: Reload1
+    vAudioClip: {fileID: 8300000, guid: 0032f0455f132d24b83db17774df317c, type: 3}
+  - vName: Reload2
+    vAudioClip: {fileID: 8300000, guid: 6a6a487d185ecf34b8b455fcc7f003e4, type: 3}
+  - vName: Losing
+    vAudioClip: {fileID: 8300000, guid: a2d3641ef72ca904885bb4b1ac1701b0, type: 3}
+  vWeaponMenuList:
+  - vWeapons:
+      vName: 
+      vWeaponName: 0
+      vWeaponType: 0
+      Is2Handed: 0
+      vWeaponIcon: {fileID: 0}
+      vWeaponObj: {fileID: 0}
+      vAimObj: {fileID: 0}
+      vProjectile: {fileID: 0}
+      vBulletAngleList: []
+      vProjectileSpeed: 0
+      vTimeBtwShot: 0
+      vTimeWaited: 0
+      vImpactFX: {fileID: 0}
+      vShotFX: {fileID: 0}
+      vDmg: 0
+      Rebounce: 0
+      vAmmoSize: 0
+      vAmmoCur: 0
+      vClipObj: {fileID: 0}
+      AttackAnimationUsed: 
+    WepPanel: {fileID: 0}
+    WeaponSprite: {fileID: 0}
+    AmmoBar: {fileID: 0}
+    AmmoValue: {fileID: 0}
+    ReloadImg: {fileID: 0}
+  - vWeapons:
+      vName: 
+      vWeaponName: 0
+      vWeaponType: 0
+      Is2Handed: 0
+      vWeaponIcon: {fileID: 0}
+      vWeaponObj: {fileID: 0}
+      vAimObj: {fileID: 0}
+      vProjectile: {fileID: 0}
+      vBulletAngleList: []
+      vProjectileSpeed: 0
+      vTimeBtwShot: 0
+      vTimeWaited: 0
+      vImpactFX: {fileID: 0}
+      vShotFX: {fileID: 0}
+      vDmg: 0
+      Rebounce: 0
+      vAmmoSize: 0
+      vAmmoCur: 0
+      vClipObj: {fileID: 0}
+      AttackAnimationUsed: 
+    WepPanel: {fileID: 0}
+    WeaponSprite: {fileID: 0}
+    AmmoBar: {fileID: 0}
+    AmmoValue: {fileID: 0}
+    ReloadImg: {fileID: 0}
+  - vWeapons:
+      vName: 
+      vWeaponName: 0
+      vWeaponType: 0
+      Is2Handed: 0
+      vWeaponIcon: {fileID: 0}
+      vWeaponObj: {fileID: 0}
+      vAimObj: {fileID: 0}
+      vProjectile: {fileID: 0}
+      vBulletAngleList: []
+      vProjectileSpeed: 0
+      vTimeBtwShot: 0
+      vTimeWaited: 0
+      vImpactFX: {fileID: 0}
+      vShotFX: {fileID: 0}
+      vDmg: 0
+      Rebounce: 0
+      vAmmoSize: 0
+      vAmmoCur: 0
+      vClipObj: {fileID: 0}
+      AttackAnimationUsed: 
+    WepPanel: {fileID: 0}
+    WeaponSprite: {fileID: 0}
+    AmmoBar: {fileID: 0}
+    AmmoValue: {fileID: 0}
+    ReloadImg: {fileID: 0}
+  - vWeapons:
+      vName: 
+      vWeaponName: 0
+      vWeaponType: 0
+      Is2Handed: 0
+      vWeaponIcon: {fileID: 0}
+      vWeaponObj: {fileID: 0}
+      vAimObj: {fileID: 0}
+      vProjectile: {fileID: 0}
+      vBulletAngleList: []
+      vProjectileSpeed: 0
+      vTimeBtwShot: 0
+      vTimeWaited: 0
+      vImpactFX: {fileID: 0}
+      vShotFX: {fileID: 0}
+      vDmg: 0
+      Rebounce: 0
+      vAmmoSize: 0
+      vAmmoCur: 0
+      vClipObj: {fileID: 0}
+      AttackAnimationUsed: 
+    WepPanel: {fileID: 0}
+    WeaponSprite: {fileID: 0}
+    AmmoBar: {fileID: 0}
+    AmmoValue: {fileID: 0}
+    ReloadImg: {fileID: 0}
+  - vWeapons:
+      vName: 
+      vWeaponName: 0
+      vWeaponType: 0
+      Is2Handed: 0
+      vWeaponIcon: {fileID: 0}
+      vWeaponObj: {fileID: 0}
+      vAimObj: {fileID: 0}
+      vProjectile: {fileID: 0}
+      vBulletAngleList: []
+      vProjectileSpeed: 0
+      vTimeBtwShot: 0
+      vTimeWaited: 0
+      vImpactFX: {fileID: 0}
+      vShotFX: {fileID: 0}
+      vDmg: 0
+      Rebounce: 0
+      vAmmoSize: 0
+      vAmmoCur: 0
+      vClipObj: {fileID: 0}
+      AttackAnimationUsed: 
+    WepPanel: {fileID: 0}
+    WeaponSprite: {fileID: 0}
+    AmmoBar: {fileID: 0}
+    AmmoValue: {fileID: 0}
+    ReloadImg: {fileID: 0}
+  vProjectileList: []
+  vFriendlyColor: {r: 0, g: 1, b: 0, a: 1}
+  vHostileColor: {r: 1, g: 0, b: 0, a: 1}
+  vNeutralColor: {r: 1, g: 1, b: 1, a: 1}
+  vItemColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  ShowDamageNumber: 1
+  vMeleeRange: 4
+  vRangedRange: 40
+  vCursorRange: 2.5
+  vBlinkDamageColor: {r: 1, g: 0, b: 0, a: 1}
+  vDamageTextColor: {r: 1, g: 1, b: 1, a: 1}
+  vLowIcon: {fileID: 21300000, guid: 475e9306c6b5dd74eb6db2412f473721, type: 3}
+  vMediumIcon: {fileID: 21300000, guid: f4250959215e59b419c4daab7858ec20, type: 3}
+  vHighIcon: {fileID: 21300000, guid: 3e6b48183fe73164f88c9f08080f8d45, type: 3}
+  vGodlyIcon: {fileID: 21300000, guid: bacef501f8d76594883bb892cd2064a3, type: 3}
+  AimObj: {fileID: 1011836339694946, guid: 070212531c3eb2b47b35d1d9daf0811e, type: 2}
+  ReloadObj: {fileID: 0}
+  vDmgText: {fileID: 1085720096893536, guid: f218198bf8b16f347ab21e9276de9529, type: 2}
+  vDyingAnim: {fileID: 1313969507769760, guid: 5f8c2f7f418655e4ab12e19a7baf5dc3, type: 2}
+  vMainPlayer: {fileID: 0}
+  vWorldObj: {fileID: 0}
+  vCanvasUI: {fileID: 0}
+  IsReady: 0
+  vGameOverObj: {fileID: 0}
+  vPressSpaceObj: {fileID: 0}
+  vItemObj: {fileID: 1652595029889896, guid: b8560118709f20d47a3cf1bc5356d6b3, type: 2}
+  vItemLootedAnim: {fileID: 0}
+  vSpriteMat: {fileID: 0}
+  vBlinkMat: {fileID: 0}
+  vHpImage: {fileID: 0}
+  vPlayerText: {fileID: 0}
+--- !u!212 &212452340828448172
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1761114946107382}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
