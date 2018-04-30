@@ -14,6 +14,8 @@ MonoBehaviour:
   DisplayName: Swat
   Description: 
   Icon: {fileID: 0}
-  LocalPrefab: {fileID: 102894, guid: 8afb7c9688610254ab6c6d6c2cbc15e4, type: 2}
-  RemotePrefab: {fileID: 110576, guid: fafe7a0ca2c576b41a33416ef9330e38, type: 2}
+  LocalPrefab: {fileID: 1287061700412444, guid: 047421f3bf86c614989cd6aa9575f5cf,
+    type: 2}
+  RemotePrefab: {fileID: 1108150911746722, guid: 7035b5259ee9876428179f9b0a08f835,
+    type: 2}
   mpPlayerTypeHelp: 84

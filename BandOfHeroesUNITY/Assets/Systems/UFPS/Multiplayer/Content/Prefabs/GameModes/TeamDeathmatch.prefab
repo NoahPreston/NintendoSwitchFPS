@@ -116,7 +116,7 @@ MonoBehaviour:
   GameLength: 300
   PauseLength: 20
   CurrentLevel: UFPSMP_TestMap
-  currentLevelHelp: 95
+  currentLevelHelp: 84
 --- !u!114 &11400008
 MonoBehaviour:
   m_ObjectHideFlags: 1

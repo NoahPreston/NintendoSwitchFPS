@@ -29,7 +29,7 @@ using System;
 public class vp_DMPlayerStats : vp_MPPlayerStats
 {
 
-	protected int Frags = 0;
+	protected int Kills = 0;
 	protected int Deaths = 0;
 	protected int Score = 0;
 	
@@ -39,11 +39,11 @@ public class vp_DMPlayerStats : vp_MPPlayerStats
 		base.InitStats();
 
 		Getters.Add("Deaths", delegate() { return Deaths; });
-		Getters.Add("Frags", delegate() { return Frags; });
+		Getters.Add("Kills", delegate() { return Kills; });
 		Getters.Add("Score", delegate() { return Score; });
 
 		Setters.Add("Deaths", delegate(object val) { Deaths = (int)val; });
-		Setters.Add("Frags", delegate(object val) { Frags = (int)val; });
+		Setters.Add("Kills", delegate(object val) { Kills = (int)val; });
 		Setters.Add("Score", delegate(object val) { Score = (int)val; });
 
 	}
@@ -58,7 +58,7 @@ public class vp_DMPlayerStats : vp_MPPlayerStats
 
 		base.FullReset();		// always remember to call base in subsequent overrides
 		
-		Frags = 0;
+		Kills = 0;
 		Deaths = 0;
 		Score = 0;
 
